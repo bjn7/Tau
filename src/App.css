@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+  color: white;
+}
+@media (max-width: 640px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

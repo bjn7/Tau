@@ -1,0 +1,50 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:1420"
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/192x192.png",
+      "icons/192x192.png",
+      "icons/512x512.png",
+      "icons/icon.ico"
+    ]
+  },
+  "productName": "Tau",
+  "version": "1.0.0",
+  "identifier": "com.tau.app",
+  "plugins": {
+    "deep-link": {
+      "desktop": {
+        "schemes": [
+          "otpauth",
+          "tau"
+        ]
+      }
+    }
+  },
+  "app": {
+    "security": {
+      "assetProtocol": {
+        "scope": [
+          "$APPCACHE/*"
+        ],
+        "enable": true
+      },
+      "csp": null
+    },
+    "windows": [
+      {
+        "title": "Tau",
+        "width": 360,
+        "height": 510
+      }
+    ]
+  }
+}

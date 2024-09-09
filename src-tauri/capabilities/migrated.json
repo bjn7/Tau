@@ -1,0 +1,40 @@
+{
+  "identifier": "migrated",
+  "description": "permissions that were migrated from v1",
+  "local": true,
+  "windows": [
+    "main"
+  ],
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "permissions": [
+    "fs:default",
+    "fs:allow-read-text-file",
+    "fs:allow-write-file",
+    "fs:allow-write-text-file",
+    "fs:allow-exists",
+    "core:event:default",
+    {
+      "identifier": "fs:scope",
+      "allow": [
+        {
+          "path": "$APPLOCALDATA/*"
+        },
+        {
+          "path": "$APPCACHE/*"
+        }
+      ]
+    },
+    "core:path:default",
+    "core:path:allow-join",
+    "deep-link:default",
+    "deep-link:allow-register",
+    "deep-link:allow-get-current",
+    "deep-link:allow-is-registered",
+    "core:app:default",
+    "dialog:default",
+    "core:window:allow-show",
+    "core:window:allow-hide",
+    "dialog:allow-open",
+    "dialog:allow-save"
+  ]
+}
