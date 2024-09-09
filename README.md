@@ -33,3 +33,5 @@
 - Implement delete function.
 - Add password protection.
 - Support `otpauth://` URL scheme for the app.
+- Loading Card
+- splashscreen

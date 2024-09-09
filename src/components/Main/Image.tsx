@@ -7,7 +7,7 @@ import { exists, BaseDirectory } from "@tauri-apps/plugin-fs";
 import useEffectOnce from "../../hooks/useEffectOnce";
 
 export default function ({ issuer }: { issuer: string }) {
-  const [imagePath, setImagePath] = useState<string>("src/assets/tau.svg");
+  const [imagePath, setImagePath] = useState<string>("/tau.svg");
 
   async function updatePaths() {
     const imgExits = await exists(issuer + ".webp", {
@@ -87,7 +87,7 @@ export default function ({ issuer }: { issuer: string }) {
       style={{ backgroundColor: dominantColor || undefined }}
     >
       <img
-        src={dominantColor ? imagePath : "src/assets/tau.svg"}
+        src={dominantColor ? imagePath : "/tau.svg"}
         // ref={imgRef}
         crossOrigin="anonymous"
       />
