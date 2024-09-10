@@ -12,7 +12,7 @@ import Card from "./card.tsx";
 export default function () {
   const [searchQuery, setSearchQuery] = useState("");
   const [hasError, setHasError] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const [_isLoading, setIsLoading] = useState(true);
   const { otp, setOtp } = useContext(Context);
   const [generatedCodes, setGeneratedCodes] = useState<{
     [key: string]: string;
@@ -82,7 +82,6 @@ export default function () {
       });
   }, []);
 
-  if (isLoading) return <p>Loading...</p>;
   if (hasError) return <p>Failed to parse the secrets.</p>;
 
   return (
