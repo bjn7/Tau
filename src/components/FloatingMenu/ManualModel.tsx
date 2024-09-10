@@ -15,7 +15,7 @@ import { Select, SelectItem } from "@nextui-org/select";
 //@ts-ignore
 import { authenticator } from "@otplib/preset-browser";
 
-import { SecretEntry } from "../../libs/FS";
+import { SecretEntry, writeSecrets } from "../../libs/FS";
 import cacheImage from "../../libs/fetchAndCacheIcon";
 
 export default function ({
@@ -150,7 +150,10 @@ export default function ({
                 onClick={async () => {
                   onClose();
                   await cacheImage(inputState.issuer);
-                  setOtp((pre) => [...pre, inputState]);
+                  setOtp((pre) => {
+                    writeSecrets([...pre, inputState]);
+                    return [...pre, inputState];
+                  });
                   setInputState({
                     algorithm: "sha1",
                     digits: 6,

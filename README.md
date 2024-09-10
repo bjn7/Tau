@@ -2,7 +2,7 @@
   <h1>Tau (𝜏)</h1>
 </div>
 
-**Tau** is a free, open-source two-factor authenticator (2FA) application for Windows, Linux, and macOS.
+**Tau** a free, open-source two-factor authenticator (2FA) application for Windows, Linux, and macOS.
 
 ## Features
 

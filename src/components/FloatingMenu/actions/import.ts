@@ -17,7 +17,6 @@ export default async function (
     if (!e.startsWith("otpauth://")) continue;
     if (!URL.canParse(e)) continue;
     const urlString = new URL(e);
-    console.log(urlString.searchParams.get("issuer"));
     cacheImage(urlString.searchParams.get("issuer") || "").then(() => {
       paseAndInsert(urlString, updateState);
     });
