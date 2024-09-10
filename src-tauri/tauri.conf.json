@@ -17,7 +17,7 @@
     ]
   },
   "productName": "Tau",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "identifier": "com.tau.app",
   "plugins": {
     "deep-link": {
