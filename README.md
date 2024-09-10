@@ -11,6 +11,8 @@
 - Simple, intuitive user interface.
 - Completely free and open source.
 
+Double click on card to copy code btw
+
 ## Installation
 
 - **Windows**: Download the installer from [releases](https://github.com/bjn7/Tau/releases) and run it.  
