@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/github/license/bjn7/tau)](https://github.com/bjn7/Tau/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues-raw/bjn7/tau)](https://github.com/bjn7/Tau/issues)
 
-Tau is an authentication application that generates time-based one-time passcodes (TOTP), available for Windows, Linux, and macOS.
+Tau is an authenticator application that generates time-based one-time passcodes (TOTP), available for Windows, Linux, and macOS.
 
 ## Features
 
