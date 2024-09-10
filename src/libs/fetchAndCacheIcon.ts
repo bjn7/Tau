@@ -29,9 +29,19 @@ async function cacheImage(issuer: string, domain: string): Promise<boolean> {
   let iconType = "symbol";
   let iconTheme = "light";
 
-  const logoDomains = ["apple.com", "stake.com", "roblox.com"];
+  const logoDomains = [
+    "apple.com",
+    "stake.com",
+    "roblox.com",
+    "cloudflare.com",
+  ];
   const iconDomains = ["heroku.com"];
-  const darkThemeDomains = ["discord.com", "stake.com"];
+  const darkThemeDomains = [
+    "discord.com",
+    "stake.com",
+    "cloudflare.com",
+    "google.com",
+  ];
 
   if (logoDomains.includes(domain)) {
     iconType = "logo";
